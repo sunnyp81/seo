@@ -1,0 +1,16 @@
+python-3.11.9
+```
+4. Commit
+
+### **2. Update `requirements.txt`**
+
+1. In GitHub, click on `requirements.txt`
+2. Click the **pencil icon** (Edit)
+3. Replace with:
+```
+flask==3.0.0
+flask-cors==4.0.0
+sentence-transformers==3.0.0
+numpy==1.26.4
+gunicorn==21.2.0
+torch==2.2.0
