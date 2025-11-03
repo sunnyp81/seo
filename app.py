@@ -66,29 +66,3 @@ def index():
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5000))
     app.run(host='0.0.0.0', port=port, debug=False)
-```
-
-4. Scroll down, click **"Commit new file"**
-
-### **3. Create File #2: requirements.txt**
-
-1. Click **"Add file" → "Create new file"** again
-2. Filename: `requirements.txt`
-3. Paste:
-```
-flask==3.0.0
-flask-cors==4.0.0
-sentence-transformers==2.2.2
-numpy==1.24.3
-gunicorn==21.2.0
-```
-
-4. Click **"Commit new file"**
-
-### **4. Create File #3: Procfile**
-
-1. Click **"Add file" → "Create new file"** again
-2. Filename: `Procfile` (no extension, capital P)
-3. Paste:
-```
-web: gunicorn app:app --timeout 120 --workers 2
